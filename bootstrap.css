@@ -7078,6 +7078,7 @@ input[type="checkbox"] {
   margin-top:5px;
   font-size: 16px;
   font-family: 'Lato';
+  color: white;
 }
 .btn-blue {
   background-color:#428bca;
@@ -7085,4 +7086,17 @@ input[type="checkbox"] {
   margin-top:5px;
   font-size: 16px;
   font-family: 'Lato';
+  color: white;
+}
+
+.btn-blue:hover ,.btn-blue:active, .btn-blue:focus, .btn-blue:visited {
+  background-color: #528dbf;
+  border:none;
+  color: white;
+}
+
+.btn-orange:hover ,.btn-orange:active, .btn-orange:focus, .btn-orange:visited{
+  background-color: #fd7648;
+  border:none;
+  color: white;
 }
