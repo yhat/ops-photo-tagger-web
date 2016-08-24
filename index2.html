@@ -29,15 +29,15 @@
           <div id="preview">
             <img src="./placeholder.png" />
           </div>
-          <input id="browse" class="form-control" type="file" style="margin-bottom:5px;"/>
+          <input id="browse" class="form-control" type="file" style="margin-bottom:5px;" />
           <br>
-          <button type="submit" class="btn btn-primary">Classify an uploaded image</button>
-          <button id="demo" class="btn btn-info">Classify a demo image</button>
+          <button type="submit" class="btn btn-primary btn-orange">Classify your uploaded image</button>
+          <button id="demo" class="btn btn-info btn-blue" style="">Classify a demo image</button>
         </div>
       </form>
       <hr>
       <div class="row text-center">
-        <div id="rich-result" class="col-sm-12">
+        <div id="rich-result" class="col-sm-12" style="min-height:20px;">
           <!-- <span class="label label-success">Thing</span> -->
         </div>
       </div>
@@ -110,7 +110,7 @@
       var image64 = image.slice(image.indexOf("base64,")+7)
       var data = { image64: image64 };
       $("#results").text("sending data....\n" + JSON.stringify(data, null, 2));
-      $("#rich-result").append(`<img src="./loading.gif" style="height: 50px; margin: 0px; padding: 0px;" />`);
+      $("#rich-result").append(`<img src="./loading.gif" style="height: 50px; margin: -20px; padding: 0px;" />`);
 
       var url = "https://sandbox.yhathq.com/demo-master/models/ImageRecognizer/";
       var request = new XMLHttpRequest();

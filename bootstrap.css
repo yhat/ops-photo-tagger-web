@@ -7071,3 +7071,18 @@ input[type="checkbox"] {
 .modal .close {
   color: #222222;
 }
+
+.btn-orange {
+  background-color:#ed5724;
+  border:none;
+  margin-top:5px;
+  font-size: 16px;
+  font-family: 'Lato';
+}
+.btn-blue {
+  background-color:#428bca;
+  border:none;
+  margin-top:5px;
+  font-size: 16px;
+  font-family: 'Lato';
+}
