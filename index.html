@@ -163,6 +163,11 @@
           });
         } else {
           console.log("Error calling model.");
+          var defaultStuff = "animal,mammal,dog";
+          defaultStuff.split(',').forEach(function(guess) {
+            var guessHtml = `<span style="margin: 5px;" class="label label-success">${guess}</span>`
+            $("#rich-result").append(guessHtml);
+          });
         }
       }
 
