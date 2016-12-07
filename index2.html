@@ -112,11 +112,11 @@
       $("#results").text("sending data....\n" + JSON.stringify(data, null, 2));
       $("#rich-result").append(`<img src="./loading.gif" style="height: 50px; margin: -20px; padding: 0px;" />`);
 
-      var url = "https://sandbox.yhathq.com/demo-master/models/ImageRecognizer/";
+      var url = "https://sandbox.c.yhat.com/demo-master/models/ImageRecognizer/";
       var request = new XMLHttpRequest();
       request.open('POST', url, true);
       request.setRequestHeader('Content-Type', 'application/json');
-      request.setRequestHeader('Authorization', 'Basic ZGVtby1tYXN0ZXI6NGE2NjJlYjEzNjQ3Y2ZiOWVkNGNhMzZjNWU5NWM3YjM=');
+      request.setRequestHeader('Authorization', 'Basic ZGVtby1tYXN0ZXI6M2IwMTYwZTEwZjZkN2E5NGEyNTI4YjExYjFjOWJjYTE=');
 
       request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
